@@ -16,11 +16,16 @@
 // Non è necessario provvedere alla validazione delle email.
 const emails = ["miaomiao@gmail.com", "asdrubalino@gmail.com","paperino@hotmail.boh","genoveffo@coccode.gallina"]
  const userMail = prompt("aggiungi una mail")
-for (i=0;  i >= emails.legnth; i++){
- if (userMail == emails[0]){
-    console.log("smettila di fare miaomiao")
-    }
-    else{
-        console.log("inserisci un altra mail che sia tra queste")
-    }
+ let mail = false
+for (i=0;  i > emails.legnth; i++){
+ if (userMail === emails[i]){
+   emails = true;
+   break;
+}
+}
+if(mail){
+    console.log("smettila di fare miao miao");
+}
+else{
+     console.log("accesso negato");
 }
